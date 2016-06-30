@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spicename: MyString
+  quantity: 1
+  scale: MyString
+  supplier: MyString
+  reorder: false
+
+two:
+  spicename: MyString
+  quantity: 1
+  scale: MyString
+  supplier: MyString
+  reorder: false

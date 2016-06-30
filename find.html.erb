@@ -1,0 +1,26 @@
+<h1>Listing spices</h1>
+<table>
+	<tr>
+		<th>Spice Name</th>
+		<th>Quantity</th>
+		<th>Scale</th>
+		<th>Supplier/th>
+		<th>Reorder?</th>
+		<th></th>
+		<th></th>
+		<th></th>
+	</tr>
+
+	<% @spices.each do |spice| %>
+	<tr>
+	  <td><%= spice.spicename %></td>
+	  <td><%= spice.quantity %></td>
+	  <td><%= spice.scale %></td>
+	  <td><%= spice.supplier %></td>
+	  <td><%= spice.reorder %></td>
+	  <td><%= link_to 'Show', spice %></td>
+	  <td><%= link_to 'Edit', edit_spice_path(spice) %></td>
+	  <td><%= link_to 'Destroy', spice, :confirm => 'Are you sure?', :method => :delete %></td>
+	</tr>
+<% end %>
+</table>
